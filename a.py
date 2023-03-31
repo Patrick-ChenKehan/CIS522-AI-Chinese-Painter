@@ -7,7 +7,21 @@ pipe = StableDiffusionPipeline.from_pretrained(model_id, torch_dtype=torch.float
 pipe.scheduler = DPMSolverMultistepScheduler.from_config(pipe.scheduler.config)
 pipe = pipe.to("cuda")
 
-prompt = "a photo of an astronaut riding a horse on mars"
-image = pipe(prompt).images[0]
+import threading
+
+def generate_image(prompt):
+    image = pipe(prompt).images[0]
+    image.save(f"{prompt}.png")
+
+thread1 = threading.Thread(target=generate_image, args=("a photo of an astronaut riding a horse on mars",))
+thread2 = threading.Thread(target=generate_image, args=("pink and white ice cream",))
+
+# prompt = "a photo of an astronaut riding a horse on mars"
+# image = pipe(prompt).images[0]
     
-image.save("astronaut_rides_horse.png")
+# image.save("astronaut_rides_horse.png")
+thread1.start()
+thread2.start()
+
+thread1.join()
+thread2.join()
