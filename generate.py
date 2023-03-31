@@ -20,4 +20,4 @@ for i in range(len(prompt_list)):
     prompt = prompt_list[i] + ', in traditonal Chinese ink painting'
     image = pipe(prompt).images[0]
     image.save(f"./Generated_Images/{img_id_list[i]}_g.png")
-    break
+#    break
