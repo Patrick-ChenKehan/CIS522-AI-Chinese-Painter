@@ -1,6 +1,6 @@
 
 import pandas as pd
-data = pd.read_csv("./labels_16k_4_Pat.csv")
+data = pd.read_csv("./labels_16k_2_Pat2.csv")
 
 from diffusers import StableDiffusionPipeline, DPMSolverMultistepScheduler
 import torch
