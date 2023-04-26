@@ -29,6 +29,6 @@ python datasets/combine_A_and_B.py --fold_A dataset/A --fold_B dataset/A --fold_
 Use the following code.
 
 ```shell
-python train.py --dataroot ./datasets/facades --name facades_pix2pix --model pix2pix --direction BtoA
+python train.py --dataroot ./datasets/facades --name facades_pix2pix --model pix2pix --direction AtoB
 ```
 
