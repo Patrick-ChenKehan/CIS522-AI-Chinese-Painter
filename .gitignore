@@ -129,6 +129,6 @@ dmypy.json
 .pyre/
 
 .DS_STORE
-Generated_Images/
-Original_Images/
+
+
 dataset/
