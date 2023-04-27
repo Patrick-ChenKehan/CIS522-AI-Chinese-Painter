@@ -12,7 +12,7 @@ The subset of the dataset can be downloaded to `Original_Images/` and `Generated
 
 ### VGG19
 
-Run notebook in `VGG19/VGG19.ipynb`. The original idea for using vgg19 is generated from [1].
+Run notebook in `VGG19/VGG19.ipynb`. The original idea for using vgg19 is generated from [1]. Modification of the code was completed with the help of ChatGPT.
 
 ### pix2pix
 
