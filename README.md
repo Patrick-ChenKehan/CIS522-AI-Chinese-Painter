@@ -36,4 +36,4 @@ python train.py --dataroot ./datasets/facades --name facades_pix2pix --model pix
 
 [1] Implementing neural style transfer using pytorch. Medium. Retrieved April 10, 2023, from https://towardsdatascience.com/implementing-neural-style-transfer-using-pytorch-fd8d43fb7bfa
 
-[2] Abdelmotaal, Hazem, et al. "Pix2pix conditional generative adversarial networks for scheimpflug camera color-coded corneal tomography image generation." Translational Vision Science & Technology 10.7 (2021): 21-21.
+[2] [pytorch pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
